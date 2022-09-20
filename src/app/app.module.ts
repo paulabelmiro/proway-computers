@@ -6,17 +6,23 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { AppRouting1Module } from './app-routing1.module';
+import { NaoEncontradaComponent } from './nao-encontrada/nao-encontrada.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    NaoEncontradaComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AppRouting1Module
+    AppRouting1Module,
+    BrowserAnimationsModule,
+    MatSnackBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

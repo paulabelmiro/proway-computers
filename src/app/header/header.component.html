@@ -1,6 +1,8 @@
 <header class="main-header">
     <h1 class="main-header__title">
+        <a href="./">
         <span class="main-header__title--blue">ProWay</span><span class="main-header__title--orange">Computers</span>
+    </a>
     </h1>
     <div class="container-menu">
     <nav class="main-header__menu">
@@ -9,10 +11,10 @@
                 <a>Produtos</a>
             </li>
             <li>
-                <a>
+                <a href="/carrinho">
                     <i class="fa-solid fa-cart-shopping"></i>
                     Carrinho
-                    <span class="badge-carrinho">0</span>
+                    <span class="badge-carrinho"> {{ carrinhoService.obtemCarrinho().length }} </span>
                 </a>
             </li>
             <li>
