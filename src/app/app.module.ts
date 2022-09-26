@@ -9,20 +9,24 @@ import { AppRouting1Module } from './app-routing1.module';
 import { NaoEncontradaComponent } from './nao-encontrada/nao-encontrada.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { BarraPesquisaComponent } from './barra-pesquisa/barra-pesquisa.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    NaoEncontradaComponent
+    NaoEncontradaComponent,
+    BarraPesquisaComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     AppRouting1Module,
     BrowserAnimationsModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
